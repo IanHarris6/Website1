@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-    	<title> Ian A. Harris </title>
+    	<title> USB3 Hub</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
 
@@ -9,7 +9,7 @@
     <body>
 
     <div class="header">
-        <h1>Ian A. Harris</h1>
+        <h1>My Projects</h1>
     </div>
 
     <div class = "spacer"></div>
@@ -18,7 +18,7 @@
     <nav class = "navbar">
         
     	<ul>
-            <li><a href="#" class="active">Home</a>
+            <li><a href="index.html" class="active">Home</a>
     		<li><a href="#">Projects</a>
     			<ul>
     				<li><a href="">USB Hub</a></li>
@@ -34,12 +34,20 @@
         
     </nav>
 
-    <h1>USB Hub</h1>
+    <h1>USB3 Hub</h1>
       
-    <p><br>Introduction:<br></p>
-    <p>Have you ever wanted extra USB Ports on your computer? Maybe you have a Macbook and only have a couple USB-C ports. There is a large market for USB hubs that expand a single USB port into many. With the introduction of USB-C and USB 3.0 it is possible to that single USB port into multiple HDMI ports as well. You can find many different types of these devices at any electronics retailer, but if you want to make your own you have come to the right place. The following is a detailed overview of how to create a USB 3.0 hub turning one USB port into four. This version of the project will not include any HDMI or video ports it will focus on expanding a USB 3.0 port.</p>
+    <p><br>Introduction:<br><br></p>
+    <p>Have you ever wanted extra USB Ports on your computer? Maybe you have a Macbook and only have a couple USB-C ports. There is a large market for USB hubs that expand a single USB port into many. With the introduction of USB-C and USB 3.0 it is possible to that single USB port into multiple HDMI ports as well. You can find many different types of these devices at any electronics retailer, but if you want to make your own you have come to the right place. The following is a detailed overview of how to create a USB 3.0 hub turning one USB port into four. This version of the project will not include any HDMI or video ports it will focus on expanding a USB 3.0 port. This USB Hub design is going to revolve around the USB5744/2G IC [1] and the schematic and PCB design will be done in KiCad [2], a free ECAD tool. All supporting documents and design files can be found in my github repo [3]. <br><br></p>
+    
+    <p> The objective is to design a hub that can expand one USB3.0 into four on any PC the user of would like, <b>see figure 1.</b> USB type-c has been quite fashionable in recent years, type-c also has all the necessary pins to support USB3.0. We will use a type-c receptacle as the upstream port on our hub. This means the user will need a cable which supports USB3.0 and has a type-c plug on one end and a plug on the other end which is compatible with the host PC. Most hubs you see at an electronics retailers have there own cable attached to the hub. This is because not all USB cables are made the same, they want to control the impedance and power requirements of the cable. This hub will rely on the user of the to make sure they have a working USB3 cable. The following will give an overview of the schematic and printed circuit board (PCB) layout, if you would like to read more about this subject I suggest looking at the sources and attempting to design a Hub yourself. </p>
+
     <p><br>Step 1: Schematic<br></p>
-    <p> </p>
+    <p>To start designing the schematic I first went to the USB5744/2G product page[1] for the datasheet and application notes to learn how to use the chip. Luckily Microchip created an evaluation board and provided a schematic for which we can use a reference in our design.</p>
+
+
+    <p><br>Step 2: Printed Circuit Board (PCB)<br></p>
+
+    <p>Footnotes:<br>[1] https://www.microchip.com/en-us/product/usb5744<br>[2] https://www.kicad.org/<br>[3] https://github.com/IanHarris6/USB3-HUB</p>
     
     
 
